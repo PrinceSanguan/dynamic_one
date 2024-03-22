@@ -156,7 +156,7 @@
       <div class="row">
         <div class="col-md-6">
           <div class="img-box">
-            <img src="{{asset('index/images/ceo.png')}}" alt="" />
+            <img src="{{asset('index/images/ceo.jpg')}}" alt="" />
           </div>
         </div>
         <div class="col-md-6">
@@ -257,7 +257,7 @@
           <div class="col-lg-3 col-sm-6">
             <div class="box ">
               <div class="img-box">
-                <img src="{{asset('index/images/ceo.png')}}" class="img1" alt="">
+                <img src="{{asset('index/images/ceo.jpg')}}" class="img1" alt="">
               </div>
               <div class="detail-box">
                 <h5>
