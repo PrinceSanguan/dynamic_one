@@ -241,6 +241,29 @@
           </div>
         </div>
 
+        <div class="col-lg-3 col-sm-6">
+          <div class="box ">
+            <div class="img-box">
+              <img src="{{asset('index/images/hikaru.jpg')}}" class="img1" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Hikaru Sai
+              </h5>
+              <p>
+               Activator
+              </p>
+            </div>
+            <div class="social_box">
+              <i class="fa fa-arrow-right"></i>
+            <a href="https://www.facebook.com/profile.php?id=61550551727111">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <i class="fa fa-arrow-left"></i>
+          </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
