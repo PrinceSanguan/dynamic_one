@@ -68,30 +68,33 @@
           </button>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
             <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href=""
-                  >Home <span class="sr-only"></span></a
-                >
+              <li class="nav-item {{ Request::is('/') ? 'active' : '' }}">
+                  <a class="nav-link" href="{{ url('/') }}">Home<span class="sr-only"></span></a>
               </li>
+              <li class="nav-item {{ Request::is('services') ? 'active' : '' }}">
+                  <a class="nav-link" href="{{ url('/services') }}">Services</a>
+              </li>
+              <li class="nav-item {{ Request::is('about-our-ceo') ? 'active' : '' }}">
+                  <a class="nav-link" href="{{ url('/about-our-ceo') }}">About our CEO</a>
+              </li>
+              <li class="nav-item {{ Request::is('why-choose-us') ? 'active' : '' }}">
+                  <a class="nav-link" href="{{ url('/why-choose-us') }}">Why Choose Us?</a>
+              </li>
+              <li class="nav-item {{ Request::is('member') ? 'active' : '' }}">
+                  <a class="nav-link" href="{{ url('member') }}">Member</a>
+              </li>
+              <li class="nav-item {{ Request::is('product') ? 'active' : '' }}">
+                <a class="nav-link" href="{{ url('product') }}">Product</a>
+            </li>
               <li class="nav-item">
-                <a class="nav-link" href=""> About</a>
+                  <a class="nav-link" href="{{ route('auth.login') }}">
+                      <i class="fa fa-key" aria-hidden="true"></i> Member's Login
+                  </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="">Why Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="">Member</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="">
-                  <i class="fa fa-key" aria-hidden="true"></i> Login</a
-                >
-              </li>
-            </ul>
+          </ul>
+
           </div>
         </nav>
       </div>

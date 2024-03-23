@@ -3,7 +3,7 @@
   <section class="footer_section">
     <div class="container">
       <p>
-        <strong>Copyright &copy; 2023-2024</strong> All rights reserved.
+        <strong>Copyright &copy; 2023-2024</strong> All rights reserved to CEO Ronald Cayetano.
       </p>
     </div>
   </section>
