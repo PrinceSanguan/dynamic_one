@@ -37,7 +37,7 @@
         <div class="col-lg-3 col-sm-6">
           <div class="box ">
             <div class="img-box">
-              <img src="{{asset('index/images/rona.jpg')}}" class="img1" alt="">
+              <img src="{{asset('index/images/ronam.jpg')}}" class="img1" alt="">
             </div>
             <div class="detail-box">
               <h5>
