@@ -16,7 +16,7 @@
               <p class="mb-4">You need to <strong class="text-dark">Approved</strong> to access this website. If you successfully approved <a href="{{route('auth.login')}}"><strong>Log in </strong></a>Here.</p>
             </div>
 
-            <form  action="{{ route('signin.form') }}" method="post" enctype="multipart/form-data">
+            <form  action="{{ route('signin.form') }}" method="post">
               @csrf
 
               @error('referral_id')
@@ -109,15 +109,7 @@
                   @enderror
               </div>
 
-              <div class="form-group">
-                <label for="">Upload a Photo</label>
-                <input type="file" class="form-control" name="file" required>
-                @error('file')
-                    <div class="text-danger">{{ $message }}</div>
-                @enderror
-            </div>
-
-              {{-- <input type="submit" value="Sign In" class="btn text-white btn-block"> --}}
+              <input type="submit" value="Sign In" class="btn text-white btn-block">
 
             </form>
 

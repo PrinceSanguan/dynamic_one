@@ -18,9 +18,19 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
+        'username',
         'name',
         'email',
+        'work',
+        'address',
+        'gender',
         'password',
+        'number',
+        'point',
+        'status',
+        'type',
+        'level',
+        'referral_id',
     ];
 
     /**
@@ -42,4 +52,14 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    public function referredBy()
+    {
+        return $this->belongsTo(User::class, 'referral_id');
+    }
+
+    public function referrals()
+    {
+    return $this->hasMany(User::class, 'referral_id');
+    }
 }

@@ -13,12 +13,23 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
+            $table->string('username')->unique();
             $table->string('name');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
+            $table->string('email');
+            $table->string('work');
+            $table->string('address');
+            $table->string('gender');
             $table->string('password');
-            $table->rememberToken();
+            $table->string('number');
+            $table->integer('point')->default(0);
+            $table->enum('status', ['deactivate', 'active'])->default('deactivate');
+            $table->enum('type', ['programmer', 'ceo', 'coceo', 'activator', 'headadmin', 'admin', 'player'])->nullable();
+            $table->enum('level', ['starter', 'premium'])->nullable();
+            $table->unsignedBigInteger('referral_id')->nullable();
             $table->timestamps();
+
+            // Add foreign key constraint for referral_id
+            $table->foreign('referral_id')->references('id')->on('users')->onDelete('set null');
         });
     }
 

@@ -50,7 +50,7 @@
 
                                 </div>
 
-                                {{-- <input type="submit" value="Log In" class="btn text-white btn-block"> --}}
+                                 <input type="submit" value="Log In" class="btn text-white btn-block"> 
 
                             </form>
 
