@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('gender');
             $table->string('password');
             $table->string('number');
-            $table->integer('point')->default(0);
+            $table->decimal('point', 8, 2)->default(0);
             $table->enum('status', ['deactivate', 'active'])->default('deactivate');
             $table->enum('type', ['programmer', 'ceo', 'coceo', 'activator', 'headadmin', 'admin', 'player'])->nullable();
             $table->enum('level', ['starter', 'premium'])->nullable();

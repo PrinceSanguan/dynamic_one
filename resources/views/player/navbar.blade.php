@@ -60,6 +60,15 @@
           </a>
         </li>
 
+        <li class="nav-item menu-open" style="margin-bottom: 10px;">
+          <a href="{{route('withdraw')}}" class="nav-link">
+            <i class="nav-icon fas fa-money-bill-alt"></i>
+            <p>
+              WITHDRAW
+            </p>
+          </a>
+        </li>
+
 {{--    <li class="nav-item menu-open" style="margin-bottom: 10px;">
            <a href="{{route('transactions')}}" class="nav-link"> 
             <i class="nav-icon fas fa-money-bill-alt"></i>

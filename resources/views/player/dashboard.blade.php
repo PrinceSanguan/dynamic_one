@@ -64,11 +64,7 @@
 
       <div class="small-box bg-warning inner text-center">
         <p style="font-size: 1.5em;">Total Income</p>
-        @php
-            $income = $users->level === 'starter' ? $totalPoints / 4 : ($users->level === 'premium' ? $totalPoints / 2 : $totalPoints);
-            $formattedIncome = number_format($income, 2); // Round off to two decimal places
-        @endphp
-        <h3 style="">&#8369;{{ $formattedIncome }}</h3>
+        <h3 style="">&#8369;{{ $users->point }}</h3>
     </div>
 
     <!-------------------------------------------------------------------------------------- Main content -->

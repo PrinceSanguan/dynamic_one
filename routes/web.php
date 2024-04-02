@@ -78,7 +78,11 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/member/dashboard', [MemberController::class, 'index'])->name('member.dashboard');
     Route::get('/member/pending_account', [MemberController::class, 'PendingAccount'])->name('member.pending_account');
     Route::get('/member/all_account', [MemberController::class, 'AllAccount'])->name('member.all_account');
-    Route::get('membero/player_level', [MemberController::class, 'PlayerLevel'])->name('member.player_level');
+    Route::get('member/player_level', [MemberController::class, 'PlayerLevel'])->name('member.player_level');
+
+    // For withdrawal
+    Route::get('player/withdraw', [PlayerController::class, 'withdraw'])->name('withdraw');
+    Route::post('player/withdraw', [PlayerController::class, 'withdrawPoints'])->name('withdraw.points');
 
     // Route for deleting a player
     Route::get('/member/delete_account/{id}', [MemberController::class, 'DeleteAccount'])->name('member.delete_account');

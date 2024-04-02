@@ -55,9 +55,9 @@
 
   <div class="small-box bg-warning">
     <div class="inner">
-      <h3>{{$users->point}}</h3>
+      <h3>&#8369;{{ $users->point }}</h3>
 
-      <p style="font-size: 1.5em;">Total Points</p>
+      <p style="font-size: 1.5em;">Total Earned</p>
     </div>
     <div class="icon">
       <i class="fas fa-user-plus"></i>
