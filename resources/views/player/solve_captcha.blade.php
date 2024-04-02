@@ -40,7 +40,7 @@
     <!-- form start -->
     <form method="post" action="{{route('player.update_points')}}">
       @csrf
-      <div class="card-body text-center">
+      <div class="card-body d-flex flex-column align-items-center">
           <span style="display: inline-block;">{!! captcha_img('inverse') !!}</span>
           <div class="input-wrapper" style="margin-top: 10px;">
               <input type="text" class="form-input" placeholder="Enter Captcha" name="captcha" required>
